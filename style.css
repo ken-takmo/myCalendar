@@ -1,0 +1,64 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+}
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+table {
+    border-collapse: collapse;
+    border: 2px solid #eee;
+    height: 50vh;
+    width: 50vh;
+}
+
+tbody td:first-child {
+    color: red;
+}
+
+tbody td:last-child {
+    color: blue;
+}
+
+thead,
+tfoot{
+    background-color: #eee;
+}
+
+tfoot {
+    font-weight: bold;
+}
+
+th,
+td{
+    padding: 8px;
+    text-align: center;
+}
+
+td.disabled{
+    opacity: 0.3;
+}
+
+td.today {
+    font-weight: bold;
+    background-color: beige;
+}
+
+#prev,
+#next,
+#today {
+    cursor: pointer;
+    user-select: none;
+}
+
+.sunday {
+    color: red;
+}
+
+.saturday {
+    color: blue;
+}
